@@ -180,30 +180,34 @@ def trouver_le_maximum_actions_a_acheter():
 
 
 brute_force()
-
+x = 0
 a = dict_actions
-liste_combinaisons = combinations(a, 16)
+
 new_liste = [0]
 benefice_totale = [0]
-for combinaison in liste_combinaisons:
-    prix_totale = 0
-    for action in combinaison:
-        cout = dict_actions[action]['cout']
-        prix_totale += cout
-    if prix_totale <= 500:
-        benefice_action_actuelle = 0
-        for action in combinaison:
-            cout = dict_actions[action]['benefice finale']
-            benefice_action_actuelle += cout
-        if benefice_totale[-1] > benefice_action_actuelle:
-            continue
-        else:
-            print(benefice_action_actuelle)
-            benefice_totale[-1] = benefice_action_actuelle
-
-            new_liste[0] = combinaison
-    else:
+while x < len(a):
+    x += 1
+    liste_combinaisons = combinations(a, x)
+    for combinaison in liste_combinaisons:
         prix_totale = 0
+        for action in combinaison:
+            cout = dict_actions[action]['cout']
+            prix_totale += cout
+        if prix_totale <= 500:
+            benefice_action_actuelle = 0
+            for action in combinaison:
+                cout = dict_actions[action]['benefice finale']
+                benefice_action_actuelle += cout
+            if benefice_totale[-1] > benefice_action_actuelle:
+                continue
+            else:
+                print(benefice_action_actuelle)
+                benefice_totale[-1] = benefice_action_actuelle
+
+                new_liste[0] = combinaison
+        else:
+            prix_totale = 0
+
 
 print(new_liste)
 print(benefice_totale)
