@@ -2,6 +2,16 @@
 Pour ce projet là il fallait créer un script en python qui allait d'une part être un brut force brute, donc pas du tout optimisé qui allait tester toutes les combinaisons possibles,
 puis d'autre part créer un script python avec un algorithme optimisé qui allait sortir le meilleur résultat dans un temps record.
 
+Pour lancer le programme :
+-lancer cmd
+-se rendre dans le dossier en entrant : cd chemin_du_fichier
+- python -m venv env
+- cd env/Scripts
+- activate ou activate.bat
+- cd .. 
+- cd ..
+- python pip install -r requirements.txt (pour installer tous les modules nécéssaires au lancement du script)
+
 Nous disposerons de 2 fichiers .py : bruteforce.py et optimized.py
 
 Pour les utiliser il faudra mettre dans le cmd chemin/bruteforce.py ou optimized.py "chemin du fichiers csv à analyser"
@@ -26,3 +36,6 @@ Une fois le fichier csv indiqué après bruteforce.py dans le cmd, une fonction 
 valeurs 'cout' et 'benefice finale'.
 à la suite de cela 3 dictionnaire seront créés à l'aide de fonction servant à trier le dictionnaire principal de plusieurs manières : selon le prix par ordre décroissant/croissant et selon le bénéfice finale par ordre décroissant.
 Pour chacun de ces nouveaux dictionnaires on va utiliser la fonction algo_optimised() qui va acheter une par une les actions dans l'ordre dans lequel elles apparaissent tout en vérifiant que le prix n'est jamais au-dessus de l'argent qui nous reste. Une fois que l'argent ne suffit plus à payer l'action suivante, la fonction se termine en affichant les actions achetées, le bénéfice totale, l'argent depensé et le temps d'execution de la fonction.
+
+
+
