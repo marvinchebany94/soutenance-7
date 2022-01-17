@@ -13,7 +13,9 @@ Pour lancer le programme :
 - python pip install -r requirements.txt (pour installer tous les modules nécéssaires au lancement du script)
 
 Nous disposerons de 2 fichiers .py : bruteforce.py et optimized.py
+
 Un diaporama au format .pptx qui explique les 2 algortihmes, la meilleure solution etc.
+
 3 fichiers .csv qui contiennent des tableaux avec le nom des actions, le prix et leur bénéfice   
 
 
