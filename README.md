@@ -13,6 +13,7 @@ Pour lancer le programme :
 - python pip install -r requirements.txt (pour installer tous les modules nécéssaires au lancement du script)
 
 Nous disposerons de 2 fichiers .py : bruteforce.py et optimized.py
+Et un diaporama au format .pptx qui explique les 2 algortihmes, la meilleure solution etc.
 
 Pour les utiliser il faudra mettre dans le cmd chemin/bruteforce.py ou optimized.py "chemin du fichiers csv à analyser"
 le fichier csv devra avoir 3 cases : nom de l'action | prix | benefice 
